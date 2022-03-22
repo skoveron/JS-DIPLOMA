@@ -1,0 +1,55 @@
+.trello {
+	display: flex;
+	padding: 30px;
+	width: 750px;
+	background: #369af8;
+	border-radius: 5px;
+}
+
+.trello * {
+	font-family: sans-serif;
+}
+
+.trello__column {
+	flex: 1;
+}
+
+.trello__column:not(:last-child) {
+	margin-right: 30px;
+}
+
+.trello__column-title {
+	margin-bottom: 20px;
+	font-size: 30px;
+	color: white;
+	user-select: none;
+}
+
+.trello__item-input {
+	padding: 10px 15px;
+	box-sizing: border-box;
+	background: white;
+	border-radius: 5px;
+	cursor: pointer;
+}
+
+.trello__dropzone {
+	height: 10px;
+	transition: background 0.15s, height 0.15s;
+}
+
+.trello__dropzone--active {
+	height: 20px;
+	background: rgba(0, 0, 0, 0.25);
+}
+
+.trello__add-item {
+	width: 100%;
+	padding: 10px 0;
+	font-size: 16px;
+	color: white;
+	background: rgba(0, 0, 0, 0.3);
+	border: none;
+	border-radius: 5px;
+	cursor: pointer;
+}
